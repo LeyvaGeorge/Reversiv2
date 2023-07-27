@@ -1,0 +1,77 @@
+body {
+  background-color: #FFEBDC;
+  font-family: "Cinzel Decorative", cursive;
+  font-family: "Sriracha", cursive;
+}
+
+header {
+  display: flex;
+  justify-self: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  z-index: 1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .board {
+  width: 810px;
+  background-color: #539955;
+  border: 12px solid #422e1a;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  z-index: 3;
+}
+main .board > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+main .board > div > div {
+  border-radius: 100%;
+  background: #539955;
+  padding: 0;
+  height: 80%;
+  width: 80%;
+}
+main .board > div > div p {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .board > div {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+  }
+  .board {
+    width: 338px;
+    border: 6pc solid #422e1a;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
